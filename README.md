@@ -1,30 +1,38 @@
-# CSRD Compliance MCP
+<div align="center">
 
-**EU Corporate Sustainability Reporting Directive (Directive (EU) 2022/2464)** compliance automation for ~50,000 companies in scope.
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/csrd-compliance-mcp)](https://github.com/CSOAI-ORG/csrd-compliance-mcp/stargazers)
 
-By [MEOK AI Labs](https://meok.ai).
+# ucsrdU complianceU mcp
 
-## Tools
+****EU Corporate Sustainability Reporting Directive (Directive (EU) 2022/2464)** compliance automation for ~50,000 companies in scope.**
 
-- `classify_entity` — when must you first report (FY2024/2025/2026/2028)
-- `list_esrs_standards` — the 12 ESRS standards (E1 climate + others)
-- `double_materiality_assessment` — identify which standards apply to you
-- `ghg_emissions_readiness` — Scope 1/2/3 gap check
-- `ixbrl_taxonomy_check` — digital-tagging readiness
-- `enforcement_status` — phase-in schedule + latest omnibus changes
+[![npm version](https://img.shields.io/npm/v/@meok-ai/csrd-compliance-mcp)](https://www.npmjs.com/package/@meok-ai/csrd-compliance-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
 
-## Install
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/csrd-compliance-mcp/issues)
+
+</div>
+
+---
+
+## Installation
 
 ```bash
 pip install csrd-compliance-mcp
+# or
+npm install -g @meok-ai/csrd-compliance-mcp
 ```
 
-## Tiers
+## Quick Start
 
-Free 10/day → Pro £199/mo → Enterprise £1,499/mo → £5k full assessment.
+See the project repository for full documentation and examples.
 
-## Why
+## Enterprise Support
 
-Large EU companies' first CSRD reports are already due. Double materiality + ESRS gap analysis + iXBRL tagging is a 9-12 month project. Member State penalties up to €3.75M per breach.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
-MIT. MEOK AI Labs.
+## License
+
+MIT © [CSOAI](https://csoai.org)
