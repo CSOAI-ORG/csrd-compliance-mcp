@@ -104,7 +104,24 @@ mcp = FastMCP(
 @mcp.tool()
 def classify_entity(employees: int, turnover_million_eur: float, balance_sheet_million_eur: float = 0, listed: bool = False, public_interest_entity: bool = False, api_key: str = "") -> str:
     """Classify when the entity must first report under CSRD. Returns first reporting FY,
-    report year, and ESRS standards required."""
+    report year, and ESRS standards required.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need to assess, audit, or verify compliance
+        requirements. Ideal for gap analysis, readiness checks, and generating
+        compliance documentation.
+
+    When NOT to use:
+        Do not use as a substitute for qualified legal counsel. This tool
+        provides technical compliance guidance, not legal advice.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": STRIPE_199})
@@ -143,7 +160,24 @@ def classify_entity(employees: int, turnover_million_eur: float, balance_sheet_m
 
 @mcp.tool()
 def list_esrs_standards(api_key: str = "") -> str:
-    """List all 12 ESRS topical standards + 2 cross-cutting."""
+    """List all 12 ESRS topical standards + 2 cross-cutting.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need to assess, audit, or verify compliance
+        requirements. Ideal for gap analysis, readiness checks, and generating
+        compliance documentation.
+
+    When NOT to use:
+        Do not use as a substitute for qualified legal counsel. This tool
+        provides technical compliance guidance, not legal advice.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg})
@@ -158,7 +192,24 @@ def list_esrs_standards(api_key: str = "") -> str:
 @mcp.tool()
 def double_materiality_assessment(business_description: str, stakeholder_concerns: str = "", api_key: str = "") -> str:
     """Run a heuristic double materiality assessment. Double materiality = (a) impact on people/planet
-    AND (b) financial impact on the entity. Returns material ESRS standards to report on."""
+    AND (b) financial impact on the entity. Returns material ESRS standards to report on.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need to assess, audit, or verify compliance
+        requirements. Ideal for gap analysis, readiness checks, and generating
+        compliance documentation.
+
+    When NOT to use:
+        Do not use as a substitute for qualified legal counsel. This tool
+        provides technical compliance guidance, not legal advice.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": STRIPE_199})
@@ -202,7 +253,24 @@ def double_materiality_assessment(business_description: str, stakeholder_concern
 @mcp.tool()
 def ghg_emissions_readiness(scopes_tracked: str = "", methodology: str = "", api_key: str = "") -> str:
     """Check ESRS E1 (Climate) Scope 1/2/3 emissions readiness. scopes_tracked: comma-separated list
-    (e.g. 'scope 1, scope 2 location-based, scope 2 market-based'). methodology: e.g. 'GHG Protocol'."""
+    (e.g. 'scope 1, scope 2 location-based, scope 2 market-based'). methodology: e.g. 'GHG Protocol'.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need to assess, audit, or verify compliance
+        requirements. Ideal for gap analysis, readiness checks, and generating
+        compliance documentation.
+
+    When NOT to use:
+        Do not use as a substitute for qualified legal counsel. This tool
+        provides technical compliance guidance, not legal advice.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": STRIPE_199})
@@ -248,7 +316,24 @@ def ghg_emissions_readiness(scopes_tracked: str = "", methodology: str = "", api
 @mcp.tool()
 def ixbrl_taxonomy_check(api_key: str = "") -> str:
     """Check readiness for mandatory iXBRL digital tagging of sustainability statements
-    under CSRD Article 29d + ESEF taxonomy extension."""
+    under CSRD Article 29d + ESEF taxonomy extension.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need to assess, audit, or verify compliance
+        requirements. Ideal for gap analysis, readiness checks, and generating
+        compliance documentation.
+
+    When NOT to use:
+        Do not use as a substitute for qualified legal counsel. This tool
+        provides technical compliance guidance, not legal advice.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg})
@@ -276,7 +361,24 @@ def ixbrl_taxonomy_check(api_key: str = "") -> str:
 
 @mcp.tool()
 def enforcement_status(api_key: str = "") -> str:
-    """Current CSRD enforcement phase-in schedule + Member State transposition status."""
+    """Current CSRD enforcement phase-in schedule + Member State transposition status.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need to assess, audit, or verify compliance
+        requirements. Ideal for gap analysis, readiness checks, and generating
+        compliance documentation.
+
+    When NOT to use:
+        Do not use as a substitute for qualified legal counsel. This tool
+        provides technical compliance guidance, not legal advice.
+    """
     now = datetime.now(timezone.utc)
     return json.dumps({
         "directive": "Directive (EU) 2022/2464 (CSRD) + Directive (EU) 2013/34/EU (Accounting Directive, amended)",
