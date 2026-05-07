@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "csrd-compliance-mcp"
-version = "1.0.0"
+version = "1.2.3"
 description = "EU Corporate Sustainability Reporting Directive (CSRD) compliance MCP — 12 ESRS standards audit, double materiality assessment, Scope 1/2/3 GHG readiness, iXBRL taxonomy check. Directive (EU) 2022/2464. By MEOK AI Labs."
 license = {file = "LICENSE"}
 readme = "README.md"
