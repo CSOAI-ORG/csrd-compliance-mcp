@@ -1,3 +1,5 @@
+[![csrd-compliance-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/csrd-compliance-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/csrd-compliance-mcp)
+
 <div align="center">
 
 [![PyPI](https://img.shields.io/pypi/v/csrd-compliance-mcp)](https://pypi.org/project/csrd-compliance-mcp/)
