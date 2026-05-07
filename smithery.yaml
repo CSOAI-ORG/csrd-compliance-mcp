@@ -1,0 +1,40 @@
+name: csrd-compliance-mcp
+description: 'Csrd Compliance tools for AI agents. Built by MEOK AI Labs.'
+version: 1.0.0
+tools:
+- name: classify_entity
+  description: 'Classify Entity operation.'
+  parameters:
+  - name: input
+    type: string
+    required: true
+- name: list_esrs_standards
+  description: 'List Esrs Standards operation.'
+  parameters:
+  - name: input
+    type: string
+    required: true
+- name: double_materiality_assessment
+  description: 'Double Materiality Assessment operation.'
+  parameters:
+  - name: input
+    type: string
+    required: true
+- name: ghg_emissions_readiness
+  description: 'Ghg Emissions Readiness operation.'
+  parameters:
+  - name: input
+    type: string
+    required: true
+- name: ixbrl_taxonomy_check
+  description: 'Ixbrl Taxonomy Check operation.'
+  parameters:
+  - name: input
+    type: string
+    required: true
+- name: enforcement_status
+  description: 'Enforcement Status operation.'
+  parameters:
+  - name: input
+    type: string
+    required: true
