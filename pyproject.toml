@@ -14,6 +14,9 @@ keywords = ["mcp", "csrd", "esrs", "sustainability-reporting", "double-materiali
 classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent"]
 dependencies = ["mcp>=1.0.0"]
 
+[project.optional-dependencies]
+dev = ["hypothesis>=6.0", "pytest>=7.0", "pytest-asyncio>=0.21"]
+
 [project.urls]
 Homepage = "https://meok.ai/csrd-compliance-mcp"
 Repository = "https://github.com/CSOAI-ORG/csrd-compliance-mcp"
