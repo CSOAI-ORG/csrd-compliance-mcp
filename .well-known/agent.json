@@ -1,0 +1,77 @@
+{
+  "name": "csrd-compliance-mcp",
+  "description": "Csrd Compliance MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/csrd-compliance-mcp.html",
+  "version": "1.3.3",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "classify_entity",
+      "name": "Classify Entity",
+      "description": "classify_entity via csrd-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_esrs_standards",
+      "name": "List Esrs Standards",
+      "description": "list_esrs_standards via csrd-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "double_materiality_assessment",
+      "name": "Double Materiality Assessment",
+      "description": "double_materiality_assessment via csrd-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "ghg_emissions_readiness",
+      "name": "Ghg Emissions Readiness",
+      "description": "ghg_emissions_readiness via csrd-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "ixbrl_taxonomy_check",
+      "name": "Ixbrl Taxonomy Check",
+      "description": "ixbrl_taxonomy_check via csrd-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "enforcement_status",
+      "name": "Enforcement Status",
+      "description": "enforcement_status via csrd-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "csrd-compliance-mcp",
+    "description": "Csrd Compliance MCP Server by MEOK AI Labs",
+    "version": "1.3.3",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "csrd-compliance-mcp"
+      }
+    ],
+    "capabilities": [
+      "classify_entity",
+      "list_esrs_standards",
+      "double_materiality_assessment",
+      "ghg_emissions_readiness",
+      "ixbrl_taxonomy_check",
+      "enforcement_status"
+    ]
+  }
+}
