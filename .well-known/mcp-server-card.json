@@ -1,0 +1,31 @@
+{
+  "name": "csrd-compliance-mcp",
+  "title": "Csrd Compliance Mcp",
+  "description": "EU Corporate Sustainability Reporting Directive (CSRD) compliance MCP \u2014 12 ESRS standards audit, double materiality assessment, Scope 1/2/3 GHG readiness, iXBRL taxonomy check. Directive (EU) 2022/2464. By MEOK AI Labs.",
+  "version": "1.3.3",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "classify_entity"
+    },
+    {
+      "name": "list_esrs_standards"
+    },
+    {
+      "name": "double_materiality_assessment"
+    },
+    {
+      "name": "ghg_emissions_readiness"
+    },
+    {
+      "name": "ixbrl_taxonomy_check"
+    },
+    {
+      "name": "enforcement_status"
+    }
+  ]
+}

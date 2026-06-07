@@ -98,3 +98,28 @@ MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 <p align="center">
   <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
 </p>
+
+
+## Configuration
+
+Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "csrd-compliance-mcp": {
+      "command": "uvx",
+      "args": ["csrd-compliance-mcp"]
+    }
+  }
+}
+```
+
+Or: `pip install csrd-compliance-mcp` then run the `csrd-compliance-mcp` command (stdio transport).
+
+## Examples
+
+Once configured, ask your assistant, for example:
+- "Use `classify_entity` to …"
+- "Use `list_esrs_standards` to …"
+- "Use `double_materiality_assessment` to …"
