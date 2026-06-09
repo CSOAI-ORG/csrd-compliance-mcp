@@ -1,40 +1,37 @@
-name: csrd-compliance-mcp
-description: 'Csrd Compliance tools for AI agents. Built by MEOK AI Labs.'
-version: 1.0.0
-tools:
-- name: classify_entity
-  description: 'Classify Entity operation.'
-  parameters:
-  - name: input
-    type: string
-    required: true
-- name: list_esrs_standards
-  description: 'List Esrs Standards operation.'
-  parameters:
-  - name: input
-    type: string
-    required: true
-- name: double_materiality_assessment
-  description: 'Double Materiality Assessment operation.'
-  parameters:
-  - name: input
-    type: string
-    required: true
-- name: ghg_emissions_readiness
-  description: 'Ghg Emissions Readiness operation.'
-  parameters:
-  - name: input
-    type: string
-    required: true
-- name: ixbrl_taxonomy_check
-  description: 'Ixbrl Taxonomy Check operation.'
-  parameters:
-  - name: input
-    type: string
-    required: true
-- name: enforcement_status
-  description: 'Enforcement Status operation.'
-  parameters:
-  - name: input
-    type: string
-    required: true
+# smithery.yaml — Smithery (https://smithery.ai) submission payload
+# Repo: CSOAI-ORG/csrd-compliance-mcp
+# Generated: 2026-06-09
+# Transport: stdio (PyPI package, installed via uvx)
+# See: DISTRIBUTION_GAPS_2026-06-08.md for the channel strategy
+startCommand:
+  type: stdio
+  timeout: 120000
+  pingInterval: 5000
+  pingTimeout: 30000
+  configSchema:
+    type: object
+    required: []
+    properties:
+      apiKey:
+        type: string
+        description: "MEOK API key (optional; required for x402 paywalled tools)"
+        default: ""
+      x402PayTo:
+        type: string
+        description: "USDC address for x402 micropayments (default: meok.ai wallet)"
+        default: ""
+      logLevel:
+        type: string
+        description: "Log level (debug, info, warn, error)"
+        default: "info"
+    additionalProperties: false
+  commandFunction: |-
+    (config) => ({
+      command: 'uvx',
+      args: ['csrd_compliance'],
+      env: {
+        MEOK_API_KEY: config.apiKey || '',
+        X402_PAY_TO: config.x402PayTo || '',
+        MEOK_LOG_LEVEL: config.logLevel || 'info',
+      }
+    })
