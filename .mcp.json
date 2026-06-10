@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "csrd-compliance-mcp": {
+      "command": "uvx",
+      "args": [
+        "csrd-compliance-mcp"
+      ]
+    }
+  }
+}
