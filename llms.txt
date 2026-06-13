@@ -1,22 +1,33 @@
 # csrd-compliance-mcp
-
-> EU Corporate Sustainability Reporting Directive (CSRD) compliance MCP — 12 ESRS standards audit, double materiality assessment, Scope 1/2/3 GHG readiness, iXBRL taxonomy check. Directive (EU) 2022/2464. By MEOK AI Labs.
-
-MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
-
-## Tools
-- classify_entity
-- list_esrs_standards
-- double_materiality_assessment
-- ghg_emissions_readiness
-- ixbrl_taxonomy_check
-- enforcement_status
+> CSRD Compliance CSRD (Regulation (EU) 2024/2848) sustainability reporting for AI systems. By MEOK AI Labs.
 
 ## Install
-```
 pip install csrd-compliance-mcp
-```
 
-## Links
-- PyPI: https://pypi.org/project/csrd-compliance-mcp/
-- Docs: https://meok.ai
+## Auth
+- Free tier: 100 calls/month, no API key needed
+- Pro tier: unlimited, set MEOK_API_KEY env var
+
+## Tools
+
+### quick_scan
+Instant compliance check from a system description. No API key required.
+- `system` (str): One-sentence AI system description
+- Returns: compliance_status, top_obligations
+
+### deadline_check
+Regulatory deadlines with days remaining.
+- Returns: List of dates with days_remaining
+
+### framework_scan
+Detailed compliance assessment.
+- `framework` (str, required): CSRD or other framework
+- `system` (str, required): System description
+- Returns: compliance_score, gaps, remediation
+
+## Endpoints
+- MCP: https://gateway.meok.ai/mcp
+- A2A: https://gateway.meok.ai/.well-known/agent-card.json
+
+## License
+MIT — https://github.com/CSOAI-ORG/csrd-compliance-mcp/blob/main/LICENSE
