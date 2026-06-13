@@ -1,0 +1,134 @@
+{
+  "name": "Csrd Compliance Mcp",
+  "version": "1.3.3",
+  "url": "https://mcp.meok.ai/csrd-compliance-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "EU Corporate Sustainability Reporting Directive (CSRD) compliance MCP — 12 ESRS standards audit, double materiality assessment, Scope 1/2/3 GHG readiness, iXBRL taxonomy check. Directive (EU) 2022/2464. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "classify_entity",
+      "name": "Classify Entity",
+      "description": "Classify Entity — a tool of the csrd-compliance-mcp MCP.",
+      "tags": [
+        "compliance",
+        "audit"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_esrs_standards",
+      "name": "List Esrs Standards",
+      "description": "List Esrs Standards — a tool of the csrd-compliance-mcp MCP.",
+      "tags": [
+        "compliance",
+        "audit"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "double_materiality_assessment",
+      "name": "Double Materiality Assessment",
+      "description": "Double Materiality Assessment — a tool of the csrd-compliance-mcp MCP.",
+      "tags": [
+        "compliance",
+        "audit"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "ghg_emissions_readiness",
+      "name": "Ghg Emissions Readiness",
+      "description": "Ghg Emissions Readiness — a tool of the csrd-compliance-mcp MCP.",
+      "tags": [
+        "compliance",
+        "audit"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "ixbrl_taxonomy_check",
+      "name": "Ixbrl Taxonomy Check",
+      "description": "Ixbrl Taxonomy Check — a tool of the csrd-compliance-mcp MCP.",
+      "tags": [
+        "compliance",
+        "audit"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "enforcement_status",
+      "name": "Enforcement Status",
+      "description": "Enforcement Status — a tool of the csrd-compliance-mcp MCP.",
+      "tags": [
+        "compliance",
+        "audit"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "csrd-compliance-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
