@@ -1,21 +1,83 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.CSOAI-ORG/csrd-compliance-mcp",
-  "version": "1.3.8",
-  "description": "Csrd Compliance MCP Server by MEOK AI Labs",
+  "name": "CSOAI-ORG/csrd-compliance-mcp",
+  "title": "CSRD Compliance",
+  "version": "1.2.1",
+  "description": "CSRD (Regulation (EU) 2024/2848) sustainability reporting for AI systems. Part of the MEOK 28-hive MCP governance mesh. 13 unified frameworks + attestation chain.",
+  "websiteUrl": "https://meok.ai/csrd-compliance-mcp",
   "repository": {
+    "type": "git",
     "url": "https://github.com/CSOAI-ORG/csrd-compliance-mcp",
-    "source": "github"
+    "source": "https://github.com/CSOAI-ORG/csrd-compliance-mcp"
   },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/CSOAI-ORG/csrd-compliance-mcp/main/assets/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "256x256"
+      ],
+      "theme": "dark"
+    }
+  ],
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "csrd-compliance-mcp",
-      "version": "1.3.8",
-      "runtimeHint": "python",
+      "version": "1.2.1",
       "transport": {
         "type": "stdio"
       }
     }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "category": "ai-governance",
+      "subcategories": [
+        "compliance",
+        "audit"
+      ],
+      "tier": "flagship",
+      "openSsfScorecard": "7.06/10"
+    }
+  },
+  "metadata": {
+    "publisher": "MEOK AI Labs",
+    "categories": [
+      "compliance",
+      "ai-governance"
+    ]
+  },
+  "examples": [
+    {
+      "name": "Quick scan via csrd-compliance-mcp",
+      "description": "Run a compliance check using the MCP server.",
+      "input": {
+        "tool": "quick_scan",
+        "arguments": {
+          "system": "example"
+        }
+      }
+    }
+  ],
+  "resources": [
+    {
+      "uri": "https://docs.meok.ai/csrd-compliance-mcp/",
+      "name": "csrd-compliance-mcp documentation",
+      "mimeType": "text/html"
+    },
+    {
+      "uri": "https://github.com/CSOAI-ORG/csrd-compliance-mcp",
+      "name": "csrd-compliance-mcp on GitHub",
+      "mimeType": "text/html"
+    }
+  ],
+  "publisher": {
+    "name": "CSOAI Ltd",
+    "url": "https://csoai.org"
+  },
+  "categories": [
+    "compliance",
+    "ai-governance"
   ]
 }
