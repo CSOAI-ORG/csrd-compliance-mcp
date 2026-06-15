@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "csrd-compliance-mcp"
-version = "1.3.8"
+version = "1.3.9"
 description = "EU Corporate Sustainability Reporting Directive (CSRD) compliance MCP — 12 ESRS standards audit, double materiality assessment, Scope 1/2/3 GHG readiness, iXBRL taxonomy check. Directive (EU) 2022/2464. By MEOK AI Labs."
 license = {file = "LICENSE"}
 readme = "README.md"
@@ -24,3 +24,22 @@ only-include = ["auth_middleware.py", "server.py"]
 
 [project.scripts]
 csrd-compliance-mcp = "server:main"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I", "N"]
+ignore = ["E501"]
+
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_Configs = true
+disallow_untyped_defs = true
+
